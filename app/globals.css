@@ -387,17 +387,44 @@ a {
   align-items: center;
   width: 100%;
   height: auto;
-  padding: 150px 0 7px;
+  padding: 150px 0 100px;
   display: flex;
   position: relative;
   overflow: hidden;
 }
 
+.merch-grid {
+  grid-column-gap: 2rem;
+  grid-row-gap: 2rem;
+  column-gap: 2rem;
+  row-gap: 2rem;
+  grid-template-columns: repeat(3, minmax(0, 320px));
+  justify-content: center;
+  align-items: stretch;
+  width: 92%;
+  max-width: 1120px;
+  display: grid;
+}
+
 .merch-embed {
   width: 100%;
+  min-height: 420px;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: stretch;
+}
+
+.shopify-custom {
+  background-color: #ffffff0f;
+  border: 1px solid #f4f7f92b;
+  border-radius: 14px;
+  padding: 20px;
+  transition: background-color 0.25s ease, border-color 0.25s ease;
+}
+
+.shopify-custom:hover {
+  background-color: #ffffff17;
+  border-color: #f4f7f947;
 }
 
 .shopify-custom > div {
@@ -409,8 +436,8 @@ a {
   display: grid;
   grid-template-columns: 1fr auto;
   column-gap: 10px;
-  max-width: 300px;
-  margin: 0 auto 50px;
+  max-width: 100%;
+  margin: 0;
   color: #f4f7f9;
   text-align: left;
 }
@@ -421,6 +448,7 @@ a {
   display: block;
   width: 100%;
   height: auto;
+  border-radius: 8px;
 }
 .shopify-custom .carousel-button {
   display: none;
@@ -444,7 +472,7 @@ a {
   opacity: 1;
 }
 .shopify-custom .shopify-buy__product__title {
-  font-size: 26px;
+  font-size: 22px;
   font-weight: bold;
   margin: 0 0 8px;
   color: #eaf0f5;
@@ -556,8 +584,8 @@ a {
   cursor: default;
 }
 .shopify-custom .shopify-buy__product-description {
-  margin-top: 28px;
-  font-size: 14px;
+  margin-top: 22px;
+  font-size: 13px;
   line-height: 1.6;
   color: #eaf0f5;
 }
@@ -778,6 +806,9 @@ a {
 /* ---------- Responsive ---------- */
 
 @media screen and (max-width: 991px) {
+  .merch-grid {
+    grid-template-columns: repeat(2, minmax(0, 320px));
+  }
   .site-nav {
     grid-column-gap: 24px;
     grid-row-gap: 1rem;
@@ -844,6 +875,9 @@ a {
 }
 
 @media screen and (max-width: 767px) {
+  .merch-grid {
+    grid-template-columns: minmax(0, 340px);
+  }
   .social--nav {
     opacity: 0.73;
     justify-content: center;
