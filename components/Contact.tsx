@@ -7,11 +7,9 @@ export default function Contact({ asSection = true }: Props) {
     <div className="grid grid--left">
       <div className="contact-card">
         <div className="contact-heading">
-          {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img className="heading-line" src="/icons/line-contact.svg" alt="" width={103.5} height={2} />
+          <span className="heading-line heading-line--short" aria-hidden="true" />
           <h2 className="contact-title">contact</h2>
-          {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img className="heading-line" src="/icons/line-contact.svg" alt="" width={103.5} height={2} />
+          <span className="heading-line heading-line--short" aria-hidden="true" />
         </div>
         <div className="contact-rows">
           {contacts.map((c) => (

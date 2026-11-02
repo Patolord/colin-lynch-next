@@ -7,6 +7,8 @@ export default function Hero() {
     <header className="hero">
       <div className="hero-inner">
         <h1 className="hero-title">{siteName}</h1>
+      </div>
+      <div className="hero-bottom">
         <NavLinks items={heroNavItems} />
         <SocialLinks variant="hero" />
       </div>

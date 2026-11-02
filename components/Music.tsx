@@ -19,7 +19,7 @@ export default function Music() {
                 className="cover"
               />
               <p className="b1">{r.title}</p>
-              <a href={r.href} target="_blank" rel="noopener noreferrer" className="link">
+              <a href={r.href} target="_blank" rel="noopener noreferrer" className="link btn-pill">
                 <p className="subtitle">Listen</p>
               </a>
             </div>

@@ -4,7 +4,7 @@ import { videos } from "@/data/site";
 export default function Video() {
   return (
     <section id="video" className="section section--video">
-      <SectionHeading title="video" />
+      <SectionHeading title="video" tone="white" />
       <div className="grid">
         {videos.map((v) => (
           <div key={v.youtubeId} className="music-block">
