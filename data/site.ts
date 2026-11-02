@@ -57,7 +57,7 @@ export const shopify = {
   products: [
     { id: "8762589249709", layout: "custom" as const, name: "Colin Lynch T-Shirt" },
     { id: "8762680508589", layout: "custom" as const, name: "Colin Lynch Hoodie" },
-    { id: "8653413810349", layout: "default" as const, name: "Miracles Off Exit 17 CD" },
+    { id: "8653413810349", layout: "custom" as const, name: "Miracles Off Exit 17 CD" },
   ],
 };
 

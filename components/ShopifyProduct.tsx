@@ -35,10 +35,10 @@ function getUI(): Promise<any> {
 }
 
 const buttonStyles = {
-  color: "#4d3939",
-  ":hover": { color: "#4d3939", "background-color": "#cac8c7" },
-  "background-color": "#e0dedd",
-  ":focus": { "background-color": "#cac8c7" },
+  color: "#1f3447",
+  ":hover": { color: "#1f3447", "background-color": "#d3e0ea" },
+  "background-color": "#eaf0f5",
+  ":focus": { "background-color": "#d3e0ea" },
 };
 
 const modalProduct = {
@@ -48,11 +48,11 @@ const modalProduct = {
       "@media (min-width: 601px)": { "max-width": "100%", "margin-left": "0px", "margin-bottom": "0px" },
     },
     button: buttonStyles,
-    title: { "font-family": "Helvetica Neue, sans-serif", "font-weight": "bold", "font-size": "26px", color: "#4c4c4c" },
-    price: { "font-family": "Helvetica Neue, sans-serif", "font-weight": "normal", "font-size": "18px", color: "#4c4c4c" },
-    compareAt: { "font-family": "Helvetica Neue, sans-serif", "font-weight": "normal", "font-size": "15.3px", color: "#4c4c4c" },
-    unitPrice: { "font-family": "Helvetica Neue, sans-serif", "font-weight": "normal", "font-size": "15.3px", color: "#4c4c4c" },
-    description: { "font-family": "Helvetica Neue, sans-serif", "font-weight": "normal", "font-size": "14px", color: "#4c4c4c" },
+    title: { "font-family": "Helvetica Neue, sans-serif", "font-weight": "bold", "font-size": "26px", color: "#27405a" },
+    price: { "font-family": "Helvetica Neue, sans-serif", "font-weight": "normal", "font-size": "18px", color: "#27405a" },
+    compareAt: { "font-family": "Helvetica Neue, sans-serif", "font-weight": "normal", "font-size": "15.3px", color: "#27405a" },
+    unitPrice: { "font-family": "Helvetica Neue, sans-serif", "font-weight": "normal", "font-size": "15.3px", color: "#27405a" },
+    description: { "font-family": "Helvetica Neue, sans-serif", "font-weight": "normal", "font-size": "14px", color: "#27405a" },
   },
   text: { button: "Add to cart" },
 };
@@ -65,12 +65,12 @@ const cart = {
 const toggle = {
   styles: {
     toggle: {
-      "background-color": "#e0dedd",
-      ":hover": { "background-color": "#cac8c7" },
-      ":focus": { "background-color": "#cac8c7" },
+      "background-color": "#eaf0f5",
+      ":hover": { "background-color": "#d3e0ea" },
+      ":focus": { "background-color": "#d3e0ea" },
     },
-    count: { color: "#4d3939", ":hover": { color: "#4d3939" } },
-    iconPath: { fill: "#4d3939" },
+    count: { color: "#1f3447", ":hover": { color: "#1f3447" } },
+    iconPath: { fill: "#1f3447" },
   },
 };
 
@@ -124,12 +124,12 @@ const defaultOptions = {
         "margin-bottom": "50px",
         "text-align": "center",
       },
-      title: { "font-size": "26px", color: "#e0dedd" },
+      title: { "font-size": "26px", color: "#eaf0f5" },
       button: buttonStyles,
-      price: { "font-size": "18px", color: "#e0dedd" },
-      compareAt: { "font-size": "15.3px", color: "#e0dedd" },
-      unitPrice: { "font-size": "15.3px", color: "#e0dedd" },
-      description: { color: "#e0dedd" },
+      price: { "font-size": "18px", color: "#eaf0f5" },
+      compareAt: { "font-size": "15.3px", color: "#eaf0f5" },
+      unitPrice: { "font-size": "15.3px", color: "#eaf0f5" },
+      description: { color: "#eaf0f5" },
     },
     contents: { img: false, imgWithCarousel: true, description: true, quantity: true, button: true },
     text: { button: "Add to cart" },
